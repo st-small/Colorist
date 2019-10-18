@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc public class Worker: NSObject {
+@objc open class Worker: NSObject {
 
     @objc public func makeColor() -> UIColor {
         return UIColor(red: CGFloat.random(in: 0..<1),
