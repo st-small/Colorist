@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "e79bbcf9ada2fa8c78252f31af157c6263b0cc7b",
+  "iOS" : [
+    {
+      "name" : "Colorist",
+      "hash" : "788357883f060192c0fcf5a3d4a07cd0891e68ed075b1b6e4f03d591d920504b",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+    }
+  ]
+}

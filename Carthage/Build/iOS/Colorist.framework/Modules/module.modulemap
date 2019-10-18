@@ -1,0 +1,11 @@
+framework module Colorist {
+  umbrella header "Colorist.h"
+
+  export *
+  module * { export * }
+}
+
+module Colorist.Swift {
+    header "Colorist-Swift.h"
+    requires objc
+}

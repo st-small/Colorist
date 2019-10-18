@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		84B7A978234DEEAD00016B2F /* Colorist.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B7A976234DEEAD00016B2F /* Colorist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84B7A97F234DEECD00016B2F /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7A97E234DEECD00016B2F /* Worker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84B7A973234DEEAD00016B2F /* Colorist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Colorist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B7A976234DEEAD00016B2F /* Colorist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colorist.h; sourceTree = "<group>"; };
 		84B7A977234DEEAD00016B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B7A97E234DEECD00016B2F /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		84B7A975234DEEAD00016B2F /* Colorist */ = {
 			isa = PBXGroup;
 			children = (
+				84B7A97E234DEECD00016B2F /* Worker.swift */,
 				84B7A976234DEEAD00016B2F /* Colorist.h */,
 				84B7A977234DEEAD00016B2F /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					84B7A972234DEEAD00016B2F = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B7A97F234DEECD00016B2F /* Worker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		84B7A97C234DEEAD00016B2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -275,9 +281,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ua.kr.ssh.Colorist;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +294,7 @@
 		84B7A97D234DEEAD00016B2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -300,6 +309,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ua.kr.ssh.Colorist;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
